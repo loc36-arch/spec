@@ -29,6 +29,7 @@ CREATE TABLE state (
 
 CREATE TABLE location (
 	record_id  TEXT  NOT NULL  PRIMARY KEY,
+	id         TEXT  NOT NULL  UNIQUE,
 	name       TEXT  NOT NULL  UNIQUE,
 	sensor     TEXT  NOT NULL,
 	FOREIGN KEY sensor REFERENCES sensor.sensor_id
