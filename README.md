@@ -7,5 +7,5 @@ them.
 
 Location Provider
 State Recorder
-History Provider
+History Provider (HP)
 Coming-soon Provider

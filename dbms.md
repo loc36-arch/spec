@@ -10,14 +10,14 @@ database shall contain information related to things coming soon to the platform
 ### emf_state database schema
 
 CREATE TABLE sensor (
-	record_id  TEXT  NOT NULL  PRIMARY KEY,
+	record_id  TEXT  NOT NULL  UNIUQE PRIMARY KEY,
 	sensor_id  TEXT  NOT NULL  UNIUQE,
 	password   TEXT  NOT NULL,
 	comment    TEXT  NOT NULL
 );
 
 CREATE TABLE state (
-	record_id  TEXT  NOT NULL  PRIMARY KEY,
+	record_id  TEXT  NOT NULL  UNIQUE PRIMARY KEY,
 	state      TEXT  NOT NULL,
 	-- Format: YYYYMMDD
 	day        TEXT  NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE state (
 );
 
 CREATE TABLE location (
-	record_id  TEXT  NOT NULL  PRIMARY KEY,
+	record_id  TEXT  NOT NULL  UNIQUE PRIMARY KEY,
 	id         TEXT  NOT NULL  UNIQUE,
 	name       TEXT  NOT NULL  UNIQUE,
 	sensor     TEXT  NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE location (
 ### coming_soon database schema
 
 CREATE TABLE coming_soon (
-	record_id   TEXT              NOT NULL  PRIMARY KEY,
+	record_id   TEXT              NOT NULL  UNIQUE PRIMARY KEY,
 	message_id  TEXT              NOT NULL  UNIQUE,
 	title       TEXT              NOT NULL,
 	message     TEXT              NOT NULL,
