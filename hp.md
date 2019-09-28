@@ -5,6 +5,10 @@ Request Path Pattern: /locHistory?location={{location id}-{day}[{-another day}..
 
 Example: /locHistory?locations=sx100HIS-20190422-20190532_mjDD3H45-20190732_erTV5451-20191130-20191008
 
+Maximum length of parameter "locations": 1024 UTF-8 characters
+Maximum number of locations: 256
+Maximum number of days for a locations: 32
+
 HTTP response code 200: Success or failure
 HTTP response code not 200: Fatal error
 
