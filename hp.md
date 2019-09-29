@@ -18,16 +18,15 @@ On success response content:
 A JSON string providing the data requested:
 
 {
-Response: {some response code},
+Response: "{some response code}",
 Data: [
 	{
 	Location: "sx100his",
-	Name: "250 Lecture Theatre",
 	DaysHistory: [
 		{
 		Day: "20190820",
 		HoursHistory: [
-			{State: 0, EndTime: "220455"}, ...
+			{State: 0, EndTime: "0856"}, ...
 		]
 		}, ...
 	]
