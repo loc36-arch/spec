@@ -19,19 +19,15 @@ A JSON string providing the data requested:
 
 {
 Response: "{some response code}",
-Data: [
-	{
-	Location: "sx100his",
-	DaysHistory: [
-		{
-		Day: "20190820",
-		HoursHistory: [
+Data: {
+	"{locationID}": {
+		"YYYYMMDD": [
 			{State: 0, EndTime: "0856"}, ...
-		]
-		}, ...
-	]
-	}, ...
-]
+		],
+		...
+	},
+	...
+}
 }
 
 Possible values of "some response code":

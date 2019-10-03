@@ -18,10 +18,10 @@ CREATE TABLE sensor (
 
 CREATE TABLE state (
 	record_id  TEXT  NOT NULL  UNIQUE PRIMARY KEY,
-	state      TEXT  NOT NULL,
+	state      TEXT  NOT NULL,	
 	-- Format: YYYYMMDD
 	day        TEXT  NOT NULL,
-	-- Format: HHMMSS
+	-- Format: HHMM
 	time       TEXT  NOT NULL,
 	sensor     TEXT  NOT NULL,
 	FOREIGN KEY sensor REFERENCES sensor.sensor_id
