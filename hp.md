@@ -18,7 +18,8 @@ On success response content:
 A JSON string providing the data requested:
 
 {
-Response: "{some response code}",
+Response: "{response code}",
+Details: "Some text further describing the document.",
 Data: {
 	"{locationID}": {
 		"YYYYMMDD": [
@@ -30,7 +31,7 @@ Data: {
 }
 }
 
-Possible values of "some response code":
+Possible values of "response code":
 
 rsp0: Request successfully carried out.
 rsp1: Invalid request data.
